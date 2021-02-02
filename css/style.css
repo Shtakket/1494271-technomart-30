@@ -14,3 +14,12 @@
 .credit {
   display: none;
 }
+.site-logo {
+  width: 220px;
+  height: 47px;
+  background: #EE3643;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
