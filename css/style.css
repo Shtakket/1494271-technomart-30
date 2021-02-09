@@ -1,4 +1,4 @@
-/*Шрифты>*/
+/*FONTS*/
 
 @font-face {
   font-family: "Cuprum";
@@ -8,6 +8,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"),
@@ -16,6 +17,7 @@
   font-weight: 400;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"),
@@ -24,6 +26,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Cuprum";
   src: local("Cuprum"),
@@ -32,6 +35,7 @@
   font-weight: 700;
   font-style: italic;
 }
+
 @font-face {
   font-family: "Ptsans";
   src: local("Ptsans"),
@@ -40,6 +44,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Ptsans";
   src: local("Ptsans"),
@@ -52,6 +57,7 @@
 /* Variables */
 
 :root {
+  --basic-menu-bookmarks:#161D29;
   --basic-menu: #293449;
   --basic-nav: #32425C;
   --basic-red: #EE3643;
@@ -69,9 +75,10 @@
   --Basic-link:#FFD180;
   --Basic-catalog-bg2:#F2F6F8;
   --Basic-catalog-bg1:#F3F7F9;
-  --Basic-catalog-form:#C5C5C5;
+  --Basic-graylight:#C5C5C5;
   --Basic-catalog-form2:#F7F3EC;
   --basic-white: #ffffff;
+  --basic-black: #000000;
 }
 
 /* Global */
@@ -80,24 +87,23 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: Ptsans, Cuprum, Arial, sans-serif;
+  font-family: "Cuprum", "Ptsans", "Arial", "sans-serif";
+  font-style: normal;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-white);
-  text-transform: uppercase;
-  background-color: var(--Basic-background);
-}
-.menu{
-  background-color: var(--basic-menu);
-}
-.menu a {
-  color: var(--basic-white);
-}
-.search {
-  background-color: var(--basic-menu);
+  background-color: var(--basic-white);
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .visually-hidden {
   position: absolute;
@@ -106,6 +112,129 @@ body {
   height: 1px;
   margin: -1px;
 }
+
+/*MAIN-HEADER*/
+
+.main-header {
+  background-color: var(--Basic-background);
+}
+
+/*MENU*/
+
+.menu {
+  background-color: var(--basic-menu);
+}
+
+.menu a, 
+.site-navigation a {
+  color: var(--basic-white);
+}
+
+.site-logo:active {
+  background-color: var(--basic-red2);
+}
+.site-logo {
+  background-color: box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);;
+}
+
+.menu a:active {
+  color:rgba(255, 255, 255, 0.5);
+}
+
+.order {
+  background-color: var(--basic-green);
+}
+
+.order:hover {
+  background-color: var(--basic-green2);
+}
+
+.bookmarks:active {
+  background-color: var(--basic-menu-bookmarks) ;
+}
+
+/* MAIN-NAV */
+
+.site-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  list-style: none;
+}
+
+.main-nav {
+  background-color: var(--basic-nav);
+}
+
+/*SEARCH*/
+
+.search-field:focus {
+  background-color: var(--basic-white);
+  outline: none;
+}
+
+input.search-field::placeholder {
+  color: var(--basic-white);
+}
+
+.search-field {
+  color: var(--basic-black);
+}
+.search-field {
+  background-color: var(--basic-menu);
+}
+
+/*----------------------------------------------------------*/
+
+.description, 
+.header-tel  {
+  color: var(--basic-red);
+}
+
+.address p {
+  color: var(--basic-nav);
+  font-size: 14px;
+}
+
+.login a {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.login a:hover {
+  color: var(--basic-red);
+}
+
+.login a:active {
+  color: var(--basic-greylight);
+}
+
+.enter-button,
+.reg-button {
+  background: white;
+  width: 121px;
+  height: 45px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.description {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.header-tel {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+/*----------------------------------------------------------------------*/
+
+
 .slider-2 {
   display: none;
 }
