@@ -98,6 +98,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--basic-white);
 }
 
 img {
@@ -120,6 +121,16 @@ img {
 }
 
 /*MENU*/
+
+.site-logo {
+  width: 220px;
+  height: 47px;
+  background: #EE3643;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .menu {
   background-color: var(--basic-menu);
@@ -164,6 +175,7 @@ img {
 
 .main-nav {
   background-color: var(--basic-nav);
+  box-shadow: inset 0px -5px 0px #293449;
 }
 
 /*SEARCH*/
@@ -232,24 +244,108 @@ input.search-field::placeholder {
   line-height: 30px;
 }
 
-/*----------------------------------------------------------------------*/
+/*---------------------PROMO-------------------------------------------------*/
 
+.promo-button1,
+.promo-button2,
+.promo-button3,
+.promo-button4,
+.promo-button5 {
+  background-color: #FFFFFF;
+  opacity: 0.3;
+  height: 38px;
+  width: 135px;
+}
+
+.promo-list-item1,
+.promo-list-item2,
+.promo-list-item3,
+.promo-list-item4,
+.promo-list-item5 {
+  width: 300px;
+  height: 123px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.promo-list-item1 {
+  background-color: var(--basic-promo1);
+}
+
+.promo-list-item2 {
+  background-color: var(--basic-promo2);
+}
+
+.promo-list-item3 {
+  background-color: var(--basic-promo3);
+}
+
+.promo-list-item4 {
+  background-color: var(--basic-promo4);
+}
+
+.promo-list-item5 {
+  background-color: var(--basic-promo5);
+}
+
+.shadow {
+  position: absolute;
+  width: 620px;
+  height: 104px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.slider {
+  width: 620px;
+  height: 266px;
+}
+
+.slider-button {
+  background-color: var(--basic-red);
+  height: 38px;
+  width: 192px;
+}
 
 .slider-2 {
   display: none;
 }
+
+/*----------------------------------------------------------------------------------------*/
+
+.popular-products-header,
+.popular-manufacturers-header {
+  background-color: var(--Basic-background2);
+  height: 89px;
+  width: 940px;
+  color: var(--basic-nav);
+}
+
+.popular-products-header h2,
+.popular-manufacturers-header h2 {
+font-size: 30px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0px;
+text-align: left;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+}
+
+
+
+.products-button,
+.manufacturers-button {
+  background-color: var(--basic-red);
+  height: 38px;
+  width: 192px;
+}
+
+
+
+/*----------------------------------------------------------------------------------------*/
 .guarantee {
   display: none;
 }
 .credit {
   display: none;
-}
-.site-logo {
-  width: 220px;
-  height: 47px;
-  background: #EE3643;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
